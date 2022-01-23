@@ -10,7 +10,7 @@
 }
 
 .header {
-    border-color: red;
+    border: 1px solid red;
     display: flex;
     margin: 0;
     padding: 0;
@@ -23,7 +23,7 @@
 
 .logo_place_header {
     /* ??? */
-    border-color: red;
+    border: 1px solid red;
     position: absolute;
     z-index: 1;
     width: 183px;
@@ -31,10 +31,36 @@
     margin: 30px 0 0 64px;
 }
 
+
+/* Научиться учиться */
+
 .header__title {
-    border-color: red;
+    border: 1px solid red;
     width: 730px;
-    left-margin: 64px;
+    margin-left: 64px;
+    margin: auto;
+    z-index: 1;
+}
+
+
+/* Какие современные и эффективные подходы к обучению
+вы можете использовать в своей жизни?*/
+
+.header__subtitle {
+    position: absolute;
+    z-index: 1;
+    width: 388px;
+    margin: auto auto 30px 64px;
+}
+
+
+/* Картина мальчик */
+
+.header__main-illustration {
+    width: 388px;
+    position: absolute;
+    margin-right: 0;
+    margin-bottom: 0;
 }
 
 
@@ -51,7 +77,7 @@
 /* и элемента с модификатором вида ключ-значение */
 
 .table__cell_theme_dark {
-    border: 3px solid red;
+    border: 1px solid red;
     width: 200px;
     color: white;
     margin-right: 0;
@@ -59,11 +85,11 @@
 }
 
 .feynman {
-    border-color: red;
+    border: 1px solid red;
     background-color: #f2f2f2;
 }
 
 .kaufman {
-    border-color: red;
+    border: 1px solid red;
     background-color: #1f1f1f;
 }
