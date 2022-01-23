@@ -11,7 +11,6 @@
 
 .header {
     border: 1px solid red;
-    display: flex;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -37,6 +36,7 @@
 /* Научиться учиться */
 
 .header__title {
+    display: flex;
     border: 1px solid red;
     width: 730px;
     margin-left: 64px;
@@ -49,11 +49,13 @@
 вы можете использовать в своей жизни?*/
 
 .header__subtitle {
+    position: relative;
     border: 1px solid red;
     position: absolute;
     z-index: 1;
     width: 388px;
-    margin: auto;
+    height: 300px;
+    left: 64px;
 }
 
 
@@ -64,6 +66,7 @@
     width: 765px;
     height: 608px;
     position: absolute;
+    z-index: 1;
     bottom: 0;
     right: 0;
 }
