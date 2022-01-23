@@ -10,6 +10,8 @@
 }
 
 .header {
+    display: flex;
+    flex-direction: column;
     border: 1px solid red;
     margin: 0;
     padding: 0;
@@ -36,12 +38,14 @@
 /* Научиться учиться */
 
 .header__title {
-    display: flex;
     border: 1px solid red;
     width: 730px;
-    margin-left: 64px;
     margin: auto;
+    margin-left: 64px;
     z-index: 1;
+    line-height: 96px;
+    font-size: 102px;
+    font-weight: bold;
 }
 
 
@@ -49,13 +53,22 @@
 вы можете использовать в своей жизни?*/
 
 .header__subtitle {
-    position: relative;
-    border: 1px solid red;
+    border: 2px solid red;
     position: absolute;
     z-index: 1;
     width: 388px;
-    height: 300px;
     left: 64px;
+    bottom: 30px;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.header__link {
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: normal;
+    color: #2f80ed;
 }
 
 
@@ -72,19 +85,76 @@
 }
 
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-
-
 /* Картина квадрат */
 
 .header__square-pic {
-    border-color: red;
+    border: 1px solid red;
     height: 568px;
     width: 568px;
     background-color: #2f80ed;
     position: absolute;
     top: 64px;
     right: 0;
+}
+
+.description {
+    border: 1px solid red;
+    width: 80%;
+    margin: 100px auto;
+    padding: 0;
+}
+
+.two-columns {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* Главные проблемы в обучении */
+
+.two-columns__brief {
+    border: 1px solid red;
+    width: 175px;
+    margin-top: 0;
+    margin-left: 0;
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: normal;
+    color: #2f80ed;
+}
+
+
+/* Контейнер для параграфов */
+
+.two-columns__main-text {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    min-width: 784px;
+}
+
+
+/* Три параграфа в колонку */
+
+.two-columns__paragraph {
+    border: 1px solid red;
+    margin: 0 0 30px;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.two-columns__span-accent {
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.two-columns__paragraph:last-of-type {
+    margin: 0;
 }
 
 
