@@ -10,26 +10,60 @@
 }
 
 .header {
+    border-color: red;
+    display: flex;
+    margin: 0;
+    padding: 0;
     height: 100vh;
     min-height: 600px;
     max-height: 756px;
+    background-color: #f2f2f2;
     /* выше установили ограничения для секции */
+}
+
+.logo_place_header {
+    /* ??? */
+    border-color: red;
+    position: absolute;
+    z-index: 1;
+    width: 183px;
+    height: 35px;
+    margin: 30px 0 0 64px;
+}
+
+.header__title {
+    border-color: red;
+    width: 730px;
+    left-margin: 64px;
 }
 
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 
 .header__square-pic {
+    border-color: red;
     height: 568px;
     width: 568px;
+    background-color: #2f80ed;
 }
 
 
 /* и элемента с модификатором вида ключ-значение */
 
 .table__cell_theme_dark {
+    border: 3px solid red;
     width: 200px;
     color: white;
     margin-right: 0;
     margin-top: 80px;
+}
+
+.feynman {
+    border-color: red;
+    background-color: #f2f2f2;
+}
+
+.kaufman {
+    border-color: red;
+    background-color: #1f1f1f;
 }
