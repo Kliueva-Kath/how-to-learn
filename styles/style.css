@@ -18,6 +18,7 @@
     min-height: 600px;
     max-height: 756px;
     background-color: #f2f2f2;
+    position: relative;
     /* выше установили ограничения для секции */
 }
 
@@ -28,7 +29,8 @@
     z-index: 1;
     width: 183px;
     height: 35px;
-    margin: 30px 0 0 64px;
+    left: 64px;
+    top: 30px;
 }
 
 
@@ -47,30 +49,39 @@
 вы можете использовать в своей жизни?*/
 
 .header__subtitle {
+    border: 1px solid red;
     position: absolute;
     z-index: 1;
     width: 388px;
-    margin: auto auto 30px 64px;
+    margin: auto;
 }
 
 
 /* Картина мальчик */
 
 .header__main-illustration {
-    width: 388px;
+    border: 1px solid red;
+    width: 765px;
+    height: 608px;
     position: absolute;
-    margin-right: 0;
-    margin-bottom: 0;
+    bottom: 0;
+    right: 0;
 }
 
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+
+
+/* Картина квадрат */
 
 .header__square-pic {
     border-color: red;
     height: 568px;
     width: 568px;
     background-color: #2f80ed;
+    position: absolute;
+    top: 64px;
+    right: 0;
 }
 
 
