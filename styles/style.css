@@ -157,6 +157,38 @@
     margin: 0;
 }
 
+.digits {
+    margin: 0 auto;
+}
+
+.sections-title {
+    text-align: center;
+    line-height: 1.15;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.sections-title_theme_light {
+    color: black;
+    width: 60%;
+    margin: 0 auto 20px;
+}
+
+.sections-subtitle {
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.table {
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    list-style: none;
+}
+
 
 /* и элемента с модификатором вида ключ-значение */
 
