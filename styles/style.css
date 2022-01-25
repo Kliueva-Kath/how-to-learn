@@ -8,6 +8,7 @@
         /* выше для экранов больше 1600px отцентрировали весь контент */
         font-family: 'Helvetica Neue', Arial, sans-serif;
     }
+    /*блок header*/
 
     .header {
         display: flex;
@@ -19,11 +20,9 @@
         max-height: 756px;
         background-color: #f2f2f2;
         position: relative;
-        /* выше установили ограничения для секции */
     }
 
     .logo_place_header {
-        /* ??? */
         position: absolute;
         z-index: 2;
         width: 183px;
@@ -83,6 +82,7 @@
         top: 64px;
         right: 0;
     }
+    /*блок description*/
 
     .description {
         width: 80%;
@@ -132,6 +132,7 @@
     .two-columns__paragraph:last-of-type {
         margin: 0;
     }
+    /*блок digits*/
 
     .digits {
         margin: 0 auto 100px;
@@ -175,7 +176,7 @@
         margin-top: 60px;
     }
 
-    .table__header {
+    .table__heading {
         margin: 0;
         text-align: left;
         line-height: 1.15;
@@ -198,6 +199,7 @@
         font-size: 18px;
         font-weight: normal;
     }
+    /*блок feynman*/
 
     .feynman {
         position: relative;
@@ -250,6 +252,7 @@
         width: 867px;
         height: 637px;
     }
+    /*блок kaufman*/
 
     .kaufman {
         position: relative;
@@ -281,10 +284,6 @@
         width: 60%;
     }
 
-    .table_theme_dark {
-        margin-bottom: 80px;
-    }
-
     .table__cell_theme_dark {
         width: 200px;
         color: white;
@@ -298,17 +297,18 @@
         min-height: 350px;
         padding: 0;
         display: flex;
+        padding-top: 60px;
     }
 
     .footer__columns {
         width: 90%;
-        margin: 60px auto 40px;
+        margin: 0 auto 40px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .footer__column_content_copyright {
+    .column__content_copyright {
         flex-basis: 711px;
         display: flex;
         flex-direction: column;
@@ -329,7 +329,7 @@
         font-weight: normal;
     }
 
-    .footer__column_content_info {
+    .column__content_info {
         color: white;
         display: flex;
         flex-direction: column;
@@ -361,14 +361,14 @@
         font-weight: normal;
     }
 
-    .footer__column_content_social {
+    .column__content_social {
         color: white;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
     }
 
-    .footer__social-link {
+    .footer__column-link {
         color: white;
         text-decoration: none;
         text-align: left;
