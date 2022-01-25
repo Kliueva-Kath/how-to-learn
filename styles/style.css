@@ -353,14 +353,6 @@
         margin-bottom: 16px;
     }
 
-    .footer__column-link {
-        color: white;
-        text-decoration: none;
-        line-height: 30px;
-        font-size: 18px;
-        font-weight: normal;
-    }
-
     .column__content_social {
         color: white;
         display: flex;
