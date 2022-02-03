@@ -295,6 +295,9 @@
             width: 60%;
             margin: auto;
             margin-bottom: 20px;
+            /* установила z-index */
+            position: relative;
+            z-index: 1;
         }
 
         .sections-subtitle_theme_dark {
@@ -307,6 +310,7 @@
             color: white;
             margin-right: 0;
             margin-top: 80px;
+            position: relative;
             z-index: 1;
         }
 
