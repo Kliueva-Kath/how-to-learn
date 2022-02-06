@@ -1,8 +1,6 @@
 .sections-title_theme_dark {
   color: white;
-  width: 60%;
   margin: auto;
-  margin-bottom: 20px;
   /* установила z-index */
   position: relative;
   z-index: 1;

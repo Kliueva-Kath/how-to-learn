@@ -8,4 +8,9 @@
   /* выровняла иконки со ссылкой по горизонтальной оси */
   display: flex;
   align-items: center;
+  transition: opacity 0.5s ease;
+}
+
+.footer__column-link:hover {
+  opacity: .5;
 }
