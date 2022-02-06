@@ -1,0 +1,11 @@
+.footer__column-heading {
+  color: white;
+  text-align: left;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0;
+  /* обнулила дефолтный верхний отступ */
+  margin-top: 0;
+  margin-bottom: 20px;
+}

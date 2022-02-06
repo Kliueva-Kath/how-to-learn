@@ -1,0 +1,11 @@
+.kaufman__triangle {
+  background-image: url('../../../images/kaufman/kaufman-triangle.svg');
+  /* добавила свойство background-size: cover для изображения */
+  background-size: cover;
+  position: absolute;
+  z-index: 0;
+  height: 877px;
+  width: 877px;
+  top: 0;
+  right: -210px;
+}

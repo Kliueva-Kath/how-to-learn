@@ -1,0 +1,9 @@
+.footer {
+  background-color: #1f1f1f;
+  min-height: 350px;
+  padding: 0;
+  display: flex;
+  /* выровняла содержимое по вертикальной оси */
+  justify-content: center;
+  padding-top: 60px;
+}

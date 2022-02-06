@@ -1,0 +1,13 @@
+.feynman {
+  position: relative;
+  background-color: #f2f2f2;
+  /* заменила height на min-height и изменила min-height с учетом padding*/
+  min-height: 790px;
+  margin: 0;
+  /* задала верхний отступ элемента с помощью padding */
+  padding-top: 100px;
+  /* сделала центрирование элементов по горизонтали через flex вместо margin */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

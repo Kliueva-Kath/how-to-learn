@@ -1,407 +1,135 @@
-        .page {
-            min-width: 1100px;
-            /* мы ещё не умеем делать мобильную версию сайта, */
-            /* поэтому выше установлена минимальная ширина страницы */
-            max-width: 1600px;
-            /* выше установили ограничение по максимальной ширине */
-            margin: 0 auto;
-            /* выше для экранов больше 1600px отцентрировали весь контент */
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-        }
-        /*блок header*/
+@import url('./vendor/normalize.css');
+@import url('./blocks/root/root.css');
 
-        .header {
-            display: flex;
-            flex-direction: column;
-            /*элемент .header__title отцентрирован по вертикали с помощью flex*/
-            justify-content: center;
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            min-height: 600px;
-            max-height: 756px;
-            background-color: #f2f2f2;
-            position: relative;
-        }
+/* блок header */
 
-        .logo_place_header {
-            position: absolute;
-            z-index: 2;
-            width: 183px;
-            /*высота исправлена*/
-            height: 32px;
-            left: 64px;
-            top: 30px;
-        }
-        /* Научиться учиться */
+@import url('./blocks/header/header.css');
+@import url('./blocks/logo/logo.css');
+@import url('./blocks/logo/_place/logo_place_header.css');
+@import url('./blocks/header/__title/header__title.css');
+@import url('./blocks/header/__subtitle/header__subtitle.css');
+@import url('./blocks/header/.header__link');
+@import url('./blocks/header/__square-pic/header__square-pic.css');
+@import url('./blocks/header/__main-illustration/header__main-illustration.css');
 
-        .header__title {
-            width: 730px;
-            margin-left: 64px;
-            /* убрала дефолтные отступы браузера */
-            margin-top: 0;
-            margin-bottom: 0;
-            z-index: 2;
-            line-height: 96px;
-            font-size: 102px;
-            font-weight: bold;
-        }
-        /* Какие современные и эффективные подходы к обучению
-вы можете использовать в своей жизни?*/
+/* блок content */
 
-        .header__subtitle {
-            position: absolute;
-            z-index: 2;
-            width: 388px;
-            left: 64px;
-            bottom: 30px;
-            margin: 0;
-            line-height: 25px;
-            font-size: 18px;
-            font-weight: normal;
-        }
+@import url('./blocks/content/content.css');
 
-        .header__link {
-            line-height: 25px;
-            font-size: 18px;
-            font-weight: normal;
-            text-decoration: none;
-            color: #2f80ed;
-        }
-        /* Картина мальчик */
+/* блок description */
 
-        .header__main-illustration {
-            width: 765px;
-            height: 608px;
-            position: absolute;
-            z-index: 1;
-            bottom: 0;
-            right: 0;
-        }
-        /* Картина квадрат */
+@import url('./blocks/description/description.css');
 
-        .header__square-pic {
-            height: 568px;
-            width: 568px;
-            background-color: #2f80ed;
-            position: absolute;
-            top: 64px;
-            right: 0;
-        }
-        /*блок description*/
+/* блок two-columns - используется в description и oakley */
 
-        .description {
-            /* Сделала горизонтальное центрирование через flex вместо margin: auto */
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            margin-top: 100px;
-            margin-bottom: 100px;
-        }
+@import url('./blocks/two-columns/two-columns.css');
+@import url('./blocks/two-columns/__brief/two-columns__brief.css');
+@import url('./blocks/two-columns/__main-text/two-columns__main-text.css');
+@import url('./blocks/two-columns/__paragraph/two-columns__paragraph.css');
+@import url('./blocks/two-columns/__span-accent/two-columns__span-accent.css');
 
-        .two-columns {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            width: 80%;
-        }
-        /* Главные проблемы в обучении */
+/* блок techniques */
 
-        .two-columns__brief {
-            width: 175px;
-            margin-top: 0;
-            margin-left: 0;
-            /* убрала дефолтный нижний отступ */
-            margin-bottom: 0;
-            line-height: 1.2;
-            font-size: 18px;
-            font-weight: normal;
-            color: #2f80ed;
-        }
-        /* Контейнер для параграфов */
+@import url('./blocks/techniques/techniques.css');
 
-        .two-columns__main-text {
-            display: flex;
-            flex-direction: column;
-            width: 80%;
-            min-width: 784px;
-        }
-        /* Три параграфа в колонку */
+/* блок section-title - используется в
+techniques, video, digits, kaufman, resources */
+@import url('./blocks/section-title/section-title.css');
+@import url('./blocks/section-title/_theme/section-title_theme_light.css');
+@import url('./blocks/section-title/_theme/section-title_theme_dark.css');
 
-        .two-columns__paragraph {
-            margin: 0 0 30px;
-            line-height: 34px;
-            font-size: 24px;
-            font-weight: normal;
-        }
+/* блок section-subtitle - используется в
+techniques, video, digits, kaufman, resources */
+@import url('./blocks/section-subtitle/section-subtitle.css');
+@import url('./blocks/section-subtitle/_theme/section-subtitle_theme_light.css');
+@import url('./blocks/section-subtitle/_theme/section-subtitle_theme_dark.css');
 
-        .two-columns__span-accent {
-            line-height: 34px;
-            font-size: 24px;
-            font-weight: bold;
-        }
+/* блок cards */
 
-        .two-columns__paragraph:last-of-type {
-            margin: 0;
-        }
-        /*блок digits*/
+@import url('./blocks/cards/cards.css');
+@import url('./blocks/cards/__title/cards__title.css');
+@import url('./blocks/cards/__item/cards__item.css');
+@import url('./blocks/cards/__description/cards__description.css');
+@import url('./blocks/cards/__image/cards__image.css');
 
-        .digits {
-            margin: 0 auto 100px;
-        }
+/* блок video */
 
-        .sections-title {
-            text-align: center;
-            line-height: 1.15;
-            font-size: 60px;
-            font-weight: bold;
-        }
+@import url('./blocks/video/video.css');
+@import url('./blocks/video/__iframes/video__iframes.css');
+@import url('./blocks/video/__iframe/video__iframe.css');
 
-        .sections-title_theme_light {
-            color: black;
-            width: 60%;
-            margin: 0 auto 20px;
-        }
+/* блок oakley */
 
-        .sections-subtitle {
-            line-height: 34px;
-            font-size: 24px;
-            font-weight: normal;
-            margin: 0 auto;
-            text-align: center;
-        }
+@import url('./blocks/oakley/oakley.css');
 
-        .table {
-            padding: 0;
-            width: 1100px;
-            margin: auto;
-            display: flex;
-            list-style: none;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
+/* блок feynman */
 
-        .table__cell_theme_light {
-            padding: 0;
-            width: 250px;
-            margin-top: 60px;
-        }
+@import url('./blocks/feynman/feynman.css');
+@import url('./blocks/feynman/__title/feynman__title.css');
+@import url('./blocks/feynman/__subtitle/feynman__subtitle.css');
+@import url('./blocks/feynman/__link/feynman__link.css');
+@import url('./blocks/feynman/__image/feynman__image.css');
 
-        .table__heading {
-            margin: 0;
-            text-align: left;
-            line-height: 1.15;
-            font-size: 24px;
-            font-weight: bold;
-        }
+/* блок digits */
 
-        .table__text {
-            margin: 20px 0 0;
-            text-align: left;
-            line-height: 1.2;
-            font-size: 18px;
-            font-weight: normal;
-        }
+@import url('./blocks/digits/digits.css');
 
-        .table__bank-text {
-            margin: 20px 0 0;
-            text-align: left;
-            line-height: 1.2;
-            font-size: 18px;
-            font-weight: normal;
-        }
-        /* блок feynman */
+/* блок table - используется в digits, kaufman */
+@import url('./blocks/table/table.css');
+@import url('./blocks/table/_theme/table_theme_light.css');
+@import url('./blocks/table/_theme/table_theme_dark.css');
+@import url('./blocks/table/__cell/table__cell.css');
+@import url('./blocks/table/__cell/_theme/table__cell_theme_light.css');
+@import url('./blocks/table/__cell/_theme/table__cell_theme_dark.css');
+@import url('./blocks/table/__heading/table__heading.css');
+@import url('./blocks/table/__heading/_theme/table__heading_theme_light.css');
+@import url('./blocks/table/__heading/_theme/table__heading_theme_dark.css');
+@import url('./blocks/table/__text/table__text.css');
+@import url('./blocks/table/__text/_content/table__text_content_bank.css');
+@import url('./blocks/table/__text/_theme/table__text_theme_light.css');
+@import url('./blocks/table/__text/_theme/table__text_theme_dark.css');
 
-        .feynman {
-            position: relative;
-            background-color: #f2f2f2;
-            /* заменила height на min-height и изменила min-height с учетом padding*/
-            min-height: 790px;
-            margin: 0;
-            /* задала верхний отступ элемента с помощью padding */
-            padding-top: 100px;
-            /* сделала центрирование элементов по горизонтали через flex вместо margin */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
 
-        .feynman__title {
-            position: relative;
-            z-index: 1;
-            width: 648px;
-            margin: 0;
-            line-height: 1.15;
-            font-size: 120px;
-            font-weight: bold;
-            text-align: center;
-        }
+/* блок khan */
 
-        .feynman__subtitle {
-            position: relative;
-            z-index: 1;
-            margin-top: 70px;
-            margin-bottom: 0;
-            line-height: 51px;
-            font-size: 36px;
-            font-weight: normal;
-        }
+@import url('./blocks/khan/khan.css');
+@import url('./blocks/khan/__container/khan__container.css');
+@import url('./blocks/khan/__author/khan__author.css');
+@import url('./blocks/khan/__title/khan__title.css');
+@import url('./blocks/khan/__quote/khan__quote.css');
+@import url('./blocks/khan/__quote-author/khan__quote-author.css');
+@import url('./blocks/khan/__quote-author-subline/khan__quote-author-subline.css');
+@import url('./blocks/khan/__book-container/khan__book-container.css');
+@import url('./blocks/khan/__book-pic/khan__book-pic.css');
+@import url('./blocks/khan/__buy-link/khan__buy-link.css');
 
-        .feynman__link {
-            position: absolute;
-            top: 50%;
-            right: 48px;
-            color: #2f80ed;
-            line-height: 51px;
-            font-size: 36px;
-            font-weight: normal;
-            text-decoration: none;
-        }
+/* блок kaufman */
 
-        .feynman__image {
-            padding: 0;
-            position: absolute;
-            z-index: 0;
-            left: 0;
-            bottom: 0;
-            width: 867px;
-            height: 637px;
-        }
-        /*блок kaufman*/
+@import url('./blocks/kaufman/kaufman.css');
+@import url('./blocks/kaufman/__triangle/kaufman__triangle.css');
 
-        .kaufman {
-            position: relative;
-            background-color: #1f1f1f;
-            overflow: hidden;
-            padding-top: 90px;
-            padding-bottom: 90px;
-        }
+/* блок resources */
 
-        .kaufman__triangle {
-            background-image: url('../images/kaufman-triangle.svg');
-            /* добавила свойство background-size: cover для изображения */
-            background-size: cover;
-            position: absolute;
-            z-index: 0;
-            height: 877px;
-            width: 877px;
-            top: 0;
-            right: -210px;
-        }
+@import url('./blocks/resources/resources.css');
+@import url('./blocks/resources/__logo-zone/resources__logo-zone.css');
+@import url('./blocks/resources/__logo/resources__logo.css');
 
-        .sections-title_theme_dark {
-            color: white;
-            width: 60%;
-            margin: auto;
-            margin-bottom: 20px;
-            /* установила z-index */
-            position: relative;
-            z-index: 1;
-        }
+/* блок footer */
 
-        .sections-subtitle_theme_dark {
-            color: white;
-            width: 60%;
-        }
+@import url('./blocks/footer/footer.css');
+@import url('./blocks/logo/_place/logo_place_footer.css');
+@import url('./blocks/footer/__columns/footer__columns.css');
+@import url('./blocks/footer/__column/footer__column.css');
+@import url('./blocks/footer/__column/_content/footer__column_content_copyright.css');
+@import url('./blocks/footer/__column/_content/footer__column_content_info.css');
+@import url('./blocks/footer/__column/_content/footer__column_content_social.css');
+@import url('./blocks/footer/__author/footer__author.css');
+@import url('./blocks/footer/__column-heading/footer__column-heading.css');
+@import url('./blocks/footer/__column-link/footer__column-link.css');
+@import url('./blocks/footer/__column-links/footer__column-links.css');
+@import url('./blocks/footer/__social-icon/footer__social-icon.css');
 
-        .table__cell_theme_dark {
-            width: 200px;
-            color: white;
-            margin-right: 0;
-            margin-top: 80px;
-            position: relative;
-            z-index: 1;
-        }
 
-        .footer {
-            background-color: #1f1f1f;
-            min-height: 350px;
-            padding: 0;
-            display: flex;
-            /* выровняла содержимое по вертикальной оси */
-            justify-content: center;
-            padding-top: 60px;
-        }
 
-        .footer__columns {
-            width: 90%;
-            margin-bottom: 40px;
-            display: flex;
-            justify-content: space-between;
-        }
 
-        .footer__column_content_copyright {
-            flex-basis: 711px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
 
-        .logo_place_footer {
-            width: 183px;
-            height: 35px;
-        }
-
-        .footer__author {
-            color: white;
-            margin-top: 18px;
-            margin-bottom: 18px;
-            line-height: 25px;
-            font-size: 18px;
-            font-weight: normal;
-        }
-
-        .footer__column_content_info {
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-        }
-
-        .footer__column-heading {
-            color: white;
-            text-align: left;
-            line-height: 30px;
-            font-size: 18px;
-            font-weight: bold;
-            padding: 0;
-            /* обнулила дефолтный верхний отступ */
-            margin-top: 0;
-            margin-bottom: 20px;
-        }
-
-        .footer__column-links {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            margin-bottom: 16px;
-            margin-top: 0;
-            padding: 0;
-            list-style: none;
-        }
-
-        .footer__column_content_social {
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-        }
-
-        .footer__column-link {
-            color: white;
-            text-decoration: none;
-            text-align: left;
-            line-height: 30px;
-            font-size: 18px;
-            font-weight: normal;
-            /* выровняла иконки со ссылкой по горизонтальной оси */
-            display: flex;
-            align-items: center;
-        }
-
-        .footer__social-icon {
-            width: 16px;
-            height: 16px;
-            margin-right: 10px;
-        }

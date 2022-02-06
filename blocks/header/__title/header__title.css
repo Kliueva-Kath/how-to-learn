@@ -1,0 +1,11 @@
+.header__title {
+  width: 730px;
+  margin-left: 64px;
+  /* убрала дефолтные отступы браузера */
+  margin-top: 0;
+  margin-bottom: 0;
+  z-index: 2;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+}

@@ -1,0 +1,11 @@
+.footer__column-link {
+  color: white;
+  text-decoration: none;
+  text-align: left;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  /* выровняла иконки со ссылкой по горизонтальной оси */
+  display: flex;
+  align-items: center;
+}

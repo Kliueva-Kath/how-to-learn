@@ -1,0 +1,8 @@
+.description {
+  /* Сделала горизонтальное центрирование через flex вместо margin: auto */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
