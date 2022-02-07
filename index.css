@@ -129,6 +129,10 @@ techniques, video, digits, kaufman, resources */
 @import url('./blocks/footer/__column-links/footer__column-links.css');
 @import url('./blocks/footer/__social-icon/footer__social-icon.css');
 
+/* блок для анимации rotation */
+
+@import url('./blocks/rotation/rotation.css');
+
 
 
 

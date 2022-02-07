@@ -22,7 +22,8 @@
       </p>
       <img class="header__main-illustration" src="./images/header/header-image.png"
         alt='картина Фёдора Решетникова "Опять двойка"' />
-      <div class="header__square-pic"></div>
+      <div class="header__square-pic rotation"></div>
+      <!--класс rotation - микс для создания анимации вращения-->
     </header>
 
     <!-- Блок content - основное содержимое страницы -->
@@ -108,8 +109,10 @@
         Для тех, кто любит прокрастинировать
       </p>
       <div class="video__iframes">
-        <iframe class="video__iframe"></iframe>
-        <iframe class="video__iframe"></iframe>
+        <iframe class="video__iframe" id="ytplayer" type="text/html" width="515" height="316"
+        src="https://www.youtube.com/embed/M7lc1UVf-VE" frameborder="0" allowfullscreen></iframe>
+        <iframe class="video__iframe" id="ytplayer" type="text/html" width="515" height="316"
+src="https://www.youtube.com/embed/M7lc1UVf-VE" frameborder="0" allowfullscreen></iframe>
       </div>
       </section>
 
@@ -247,7 +250,8 @@
         <p class="sections-subtitle sections-subtitle_theme_dark">
           от Джоша Кауфмана
         </p>
-        <div class="kaufman__triangle"></div>
+        <div class="kaufman__triangle rotation"></div>
+        <!--класс rotation - микс для создания анимации вращения-->
         <ul class="table table_theme_dark">
           <li class="table__cell table__cell_theme_dark">
             <h3 class="table__heading table__heading_theme_dark">1</h3>
