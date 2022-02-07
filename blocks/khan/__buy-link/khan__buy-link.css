@@ -1,1 +1,11 @@
-// TODO: Добавить трансформацию opacity
+.khan__buy-link {
+  text-decoration: none;
+  color: #2f80ed;
+  line-height: 42px;
+  font-size: 30px;
+  transition: opacity 0.5s ease;
+}
+
+.khan__buy-link:hover {
+  opacity: .5;
+}
