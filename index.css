@@ -85,7 +85,7 @@ techniques, video, digits, kaufman, resources */
 @import url('./blocks/table/__heading/_theme/table__heading_theme_light.css');
 @import url('./blocks/table/__heading/_theme/table__heading_theme_dark.css');
 @import url('./blocks/table/__text/table__text.css');
-@import url('./blocks/table/__text/_content/table__text_content_bank.css');
+@import url('./blocks/table/__bank-text/table__bank-text.css');
 @import url('./blocks/table/__text/_theme/table__text_theme_light.css');
 @import url('./blocks/table/__text/_theme/table__text_theme_dark.css');
 
