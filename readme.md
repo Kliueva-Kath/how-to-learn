@@ -17,3 +17,5 @@
 ### _Другие мои проекты_:
 
 1. [Путешествия по России](https://kliueva-kath.github.io/russian-travel/)
+2. [Mesto](https://github.com/Kliueva-Kath/mesto/)
+3. [Premium Car Blog](https://github.com/Kliueva-Kath/premium-car-blog/)
