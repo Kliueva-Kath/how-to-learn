@@ -18,4 +18,4 @@
 
 1. [Путешествия по России](https://kliueva-kath.github.io/russian-travel/)
 2. [Mesto](https://github.com/Kliueva-Kath/mesto/)
-3. [Premium Car Blog](https://kliueva-kath.github.io/premium-car-blog/)
+3. [Mesto на React](https://github.com/Kliueva-Kath/react-mesto-auth)
